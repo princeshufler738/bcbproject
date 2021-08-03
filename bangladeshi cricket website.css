@@ -1,0 +1,382 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	margin: 0;
+	font-family: tahoma,sans-serif,arial;
+
+}
+.main-menu{
+	background: #064d24;
+}
+
+.main-menu:after{
+	content: '';
+	display: block;
+	clear: both;
+
+
+}
+
+/*** image**/
+.image
+{
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding: 0px 30px;
+}
+
+
+.main-menu ul{
+	margin: 0;
+	list-style: none;
+	float: right;
+	z-index: 999;
+
+}
+/*** porer {} e moddy sub menur kaj**/
+.main-menu>ul> li{
+	float:left; 
+	margin-right: 3px;
+	position: relative;
+
+
+}
+
+
+.main-menu ul li a{
+	color: #FFFFFF; 
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 32px 20px;
+	display: block;
+
+}
+.main-menu ul li:hover a{
+	background: white;
+	color: black;
+
+}
+.main-menu ul.anything a{
+	background: white;
+}
+
+.main-content{
+
+overflow: hidden;
+}
+
+/*** sub menu**/
+.main-menu ul ul{
+	padding-left: 0;
+	background: red;
+	position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+  display: none;
+  padding: 0;
+}
+
+.main-menu ul li:hover> ul{
+	display: block;
+	padding: 0;
+
+}
+/***about bcb er sub menur hover color**/
+.main-menu ul ul li:hover a{
+	background: #2980b9;
+     padding: 10px;
+}
+/**history er sub menur kaj **/
+.main-menu ul ul li{
+	position: relative;
+}
+.main-menu ul ul ul{
+	left:100%;
+	top: 0;
+}
+.main-menu ul ul ul li:hover a{
+	background: yellow;
+	
+}
+
+.container
+{
+	margin: 0 auto;
+	max-width: 750px;
+	box-sizing: border-box;
+}
+
+.div1
+{
+	width: 750px;
+	height: 150px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: #F6F6F6;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+.sub-div1
+{
+	font-size: 23px;
+}
+
+.btn
+{
+	width:100px ;
+	height: 35px;
+    padding: 13px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #7de663, #28eab0 );
+    border: none;
+    color: white;
+    font-family: arial;
+}
+
+.btn:hover
+{
+	background-image: linear-gradient(to right, #28eab0, #7de663 );
+
+}
+
+.image-wrapper
+{
+	
+}
+
+.div2
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+
+}
+
+.image1
+{
+	width: 100%;
+
+}
+.text-wrapper
+{
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	transform: translate(5%, 310%);
+	color: white;
+	width: 500px;
+
+}
+
+.text-wrapper h1
+{
+	font-size: 27px;
+}
+
+.full-image
+{
+	width: 750px;
+	margin: 0 auto;
+	box-shadow: black 0px 0px 1px 0px ;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+.full-image h1
+{
+	font-size: 30px;
+	padding: 12px 12px 0px 12px;
+}
+
+.full-image p
+{
+	padding: 12px;
+}
+
+.full-image img
+{
+	width: 97%;
+	padding: 12px;
+}
+
+.half-image
+{
+	width: 750px;
+	margin: 0 auto;
+	box-shadow: black 0px 0px 1px 0px ;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.half-image img
+{
+	padding: 12px 12px 0px;
+}
+
+.div3
+{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+.container-image img
+{
+	width: 350px;
+}
+
+.container-image1 img
+{
+	width: 350px;
+}
+
+ span
+{
+	padding: 0px 12px 5px ;
+	color: #aec3c0;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+ h3
+{
+	padding: 0px 12px 12px ;
+	font-family: AustinNewstextRoman,Georgia,Times,serif;
+    color: #274945;
+    font-weight: 600;
+    margin: 0 0 5px;
+    padding-bottom: 10px;
+    line-height: 1.17;
+
+}
+
+.line
+{
+	border: 2px solid #aec3c0;
+	border-bottom: none;
+	width: 350px;
+	margin:0 auto;
+}
+
+.ports
+{
+	padding: 0;
+    line-height: 1.4;
+    margin: 10px 12px 0px ;
+	height: 55px;
+	font-family: AustinNewstextRoman,Georgia,Times,serif;
+    background-color: #fff;
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: normal;
+}
+
+.comon-hr
+{
+	width: 350px;
+	margin: 0 auto;
+}
+
+
+.sponsor
+{
+    max-width: 1000px;
+    background: rgb(230, 230, 226);
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sponsordiv
+{
+    
+    padding: 40px 0px ;
+}
+
+.sponsordiv img
+{
+    max-width: 700px;
+    margin: 40px 0px ;
+}
+
+.sponsordiv p:first-child 
+{
+    
+    font-size: 40px;
+}
+
+.sponsordiv p:last-child
+{
+    font-size: 18px;
+}
+
+
+
+.logo img
+{
+    width: 400px;
+    color: black;
+    padding: 40px 20px ;
+}
+
+.about h1
+{
+    padding-bottom: 20px ;
+}
+
+.about p:first-of-type
+{
+    padding: 0px 20px 20px;
+}
+
+.about p:last-of-type
+{
+    padding: 0px 20px 20px;
+
+}
+
+.about a 
+{
+    text-decoration: none;
+    color: #537f16;
+	padding-bottom:30px ;
+}
+
+
+
+
+
+
+
+
+
+
+.bottom-container
+{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.bottom-container a 
+{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+.bottom-container p
+{
+    color: white ;
+    margin-top: 20px;
+}
